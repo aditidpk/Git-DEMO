@@ -16,17 +16,19 @@ public class ProcessingBall extends PApplet {
     Ball ball2;
     Ball ball3;
     Ball ball4;
+    Ball ball5;
+
     private List<Ball> balls;
 
     @Override
     public void setup() {
-        size(500, 500);
-        ball1 = new Ball(x1, Y_POS1, x1+1, RADIUS);
-        ball2 = new Ball(x1, Y_POS1+120, x1+2, RADIUS);
-        ball3 = new Ball(x1, Y_POS1+240, x1+3, RADIUS);
-        ball4 = new Ball(x1, Y_POS1+360, x1+4, RADIUS);
-
-        balls = Arrays.asList(ball1, ball2, ball3, ball4);
+        size(600, 600);
+        ball1 = new Ball(x1, Y_POS1, x1+2, RADIUS);
+        ball2 = new Ball(x1, Y_POS1+120, x1+4, RADIUS);
+        ball3 = new Ball(x1, Y_POS1+240, x1+6, RADIUS);
+        ball4 = new Ball(x1, Y_POS1+360, x1+8, RADIUS);
+        ball5 = new Ball(x1, Y_POS1+480, x1+12, RADIUS);
+        balls = Arrays.asList(ball1, ball2, ball3, ball4, ball5);
     }
 
     @Override
